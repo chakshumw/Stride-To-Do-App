@@ -1,32 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="#211134" >
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="173dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="280dp"
-        android:contentDescription="@string/logo"
-        android:src="@drawable/logo" />
-
-    <ImageView
-        android:id="@+id/design"
-        android:layout_width="638dp"
-        android:layout_height="281dp"
-        android:layout_marginTop="40dp"
-        android:contentDescription="@string/design"
-        android:alpha="0.5"
-        android:src="@drawable/design"/>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/drawer_header"
+        android:layout_gravity="start" >
+    </com.google.android.material.navigation.NavigationView>
 
 
-</LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
