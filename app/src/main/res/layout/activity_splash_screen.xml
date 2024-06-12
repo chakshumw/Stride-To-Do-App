@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="280dp"
-        android:contentDescription="@string/logo"
+        android:contentDescription="logo"
         android:src="@drawable/logo" />
 
     <ImageView
@@ -24,7 +24,7 @@
         android:layout_width="638dp"
         android:layout_height="281dp"
         android:layout_marginTop="40dp"
-        android:contentDescription="@string/design"
+        android:contentDescription="design"
         android:alpha="0.5"
         android:src="@drawable/design"/>
 

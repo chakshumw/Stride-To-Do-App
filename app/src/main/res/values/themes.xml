@@ -1,9 +1,19 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.StrideToDoApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonStyle</item>
     </style>
 
     <style name="Theme.StrideToDoApp" parent="Base.Theme.StrideToDoApp" />
+
+    <style name="FloatingActionButtonStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/hexagon_fab</item>
+    </style>
+
+    <style name="hexagon_fab" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">30%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
 </resources>

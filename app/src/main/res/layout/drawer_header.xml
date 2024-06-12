@@ -13,12 +13,13 @@
         android:layout_height="80dp"
         app:cardCornerRadius="40dp"
         app:cardElevation="0dp"
-        android:backgroundTint="#211134">
+        android:backgroundTint="#543578">
 
         <ImageView
+            android:id="@+id/ivUserPP"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/person_icon">
+            android:src="@drawable/userpp3drawerheader">
 
         </ImageView>
 
@@ -26,6 +27,7 @@
 
 
     <TextView
+        android:id="@+id/tvDHUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Username"

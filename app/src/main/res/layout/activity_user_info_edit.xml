@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_info_edit"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#211134"
+    tools:context=".UserInfoEdit">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#211134">
+
+        <ImageButton
+            android:id="@+id/drawer_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dev_back_arrow"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="start|center_vertical" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDevInfo"
+        android:text="USER INFORMATION"
+        android:textColor="#C0A1DC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/userpp2"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:contentDescription="Profile Picture" />
+
+    <TextView
+        android:id="@+id/tvUIEIUsernameKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textColor="#C0A1DC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etUIEIUsernameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dhyan"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvUIEINameKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="#C0A1DC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etUIEINameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dhyan Jayasinghe"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvUIEIEmailKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="#C0A1DC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etUIEIEmailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dhyanjayasinghe@gmail.com"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:paddingHorizontal="32dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/UIEIConfirmButton"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_background"
+            android:text="CONFIRM"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/UIEICancelButton"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_background"
+            android:text="CANCEL"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
+
