@@ -53,9 +53,15 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.OnTas
             }
         });
 
+        // Get header view and username TextView
         View headerView = navigationview.getHeaderView(0);
         ImageView userImage = headerView.findViewById(R.id.ivUserPP);
         TextView textUsername = headerView.findViewById(R.id.tvDHUsername);
+
+        // Retrieve and display the username from SharedPreferences
+        sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
+        String username = sharedPreferences.getString("username", "Username");
+        textUsername.setText(username);
 
         userImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,18 +78,16 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.OnTas
 
                 if (itemId == R.id.settings) {
                     Toast.makeText(MainActivity.this, "Settings Clicked", Toast.LENGTH_SHORT).show();
-                }
-
-                if (itemId == R.id.developer) {
-                    Toast.makeText(MainActivity.this, "Developer Clicked", Toast.LENGTH_SHORT).show();
+                } else if (itemId == R.id.developer) {
+                    Intent intent = new Intent(MainActivity.this, DeveloperInfoScreen.class);
+                    startActivity(intent);
                 }
 
                 drawer_layout.close();
-                return false;
+                return true;
             }
         });
 
-        sharedPreferences = getSharedPreferences("tasks", MODE_PRIVATE);
         taskList = loadTasks();
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);

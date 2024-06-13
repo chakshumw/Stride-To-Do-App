@@ -17,7 +17,7 @@
         android:background="#211134">
 
         <ImageButton
-            android:id="@+id/drawer_toggle"
+            android:id="@+id/userinfo_drawer_toggle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/dev_back_arrow"
