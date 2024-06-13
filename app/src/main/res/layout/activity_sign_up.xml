@@ -115,13 +115,11 @@
     <Button
         android:id="@+id/signup_button"
         android:layout_width="350dp"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="12dp"
-        android:background="#5D457A"
-        android:padding="5dp"
+        android:background="@drawable/button_background"
         android:text="SIGNUP"
-        android:alpha="0.5"
         android:textColor="#FFFFFF"
         android:textStyle="bold" />
 

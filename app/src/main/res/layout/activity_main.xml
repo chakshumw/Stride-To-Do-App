@@ -9,13 +9,19 @@
     tools:openDrawer="start"
     tools:context=".MainActivity">
 
+    <include layout="@layout/activity_main_content"/>
+
+
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:background="#211134"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="#764ea6"
         app:menu="@menu/nav_menu"
         app:headerLayout="@layout/drawer_header"
-        android:layout_gravity="start" >
-    </com.google.android.material.navigation.NavigationView>
+        android:layout_gravity="start" />
 
 
 

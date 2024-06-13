@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn ="navigation_view">
 
-    <item
-        android:icon="@drawable/settings_icon"
-        android:id="@+id/settings"
-        android:title="Settings" />
+        <item
+            android:icon="@drawable/settings_icon"
+            android:id="@+id/settings"
+            android:title="Settings" />
 
-    <item
-        android:icon="@drawable/person_icon"
-        android:id="@+id/developer"
-        android:title="Developer Info" />
+        <item
+            android:icon="@drawable/person_icon2"
+            android:id="@+id/developer"
+            android:title="Developer Info" />
 
-    <item
-        android:icon="@drawable/logouticon"
-        android:id="@+id/sign_out"
-        android:title="Signout" />
+
+
+
 </menu>
